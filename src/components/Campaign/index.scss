@@ -1,0 +1,185 @@
+@import './../../assets/scss/partials/variables';
+
+.campaign {
+  padding: 60px 0;
+
+  .list {
+    &__title {
+      text-align: center;
+      background-color: #d9534f;
+      color: white;
+      padding: 10px 15px;
+      border-radius: 3px;
+      margin-bottom: 20px;
+
+      h3 {
+        margin: 15px 0;
+        font: {
+          size: 24px;
+          weight: $font-medium;
+        }
+      }
+    }
+
+    &__filter {
+      display: block;
+      height: 50px;
+      margin-bottom: 20px;
+
+      input {
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+        width: 100%;
+        padding: 6px 12px;
+        font-size: 14px;
+        line-height: 34px;
+        color: #555;
+        outline: none;
+      }
+    }
+
+    &__table {
+      overflow-x: auto;
+
+      table {
+        max-width: 100%;
+        width: 100%;
+
+        .campaign-name {
+          @media (max-width: $breakpoint-mobile) {
+            width: 70px;
+            max-width: 100px;
+          }
+        }
+
+        .supplier-name {
+          @media (max-width: $breakpoint-mobile) {
+            min-width: 70px;
+            max-width: 150px;
+          }
+        }
+
+        .campaign-name,
+        .supplier-name,
+        .checklist-name {
+          @media (max-width: $breakpoint-mobile) {
+            text-align: left;
+            word-break: break-word;
+          }
+        }
+
+        thead {
+          tr {
+            th {
+              background-color: #8e1921;
+              color: white;
+              font: {
+                size: 14px;
+                weight: $font-medium;
+              }
+              padding: 12px;
+              text-align: center;
+
+              @media (max-width: $breakpoint-mobile) {
+                font: {
+                  size: 12px;
+                  weight: $font-regular;
+                }
+                padding: 5px;
+              }
+
+              &:nth-child(1) {
+                @media (max-width: $breakpoint-mobile) {
+                  max-width: 100px;
+                  text-align: left;
+                }
+              }
+            }
+          }
+        }
+
+        tbody {
+          tr {
+            td {
+              text-align: center;
+              color: black;
+              font: {
+                size: 14px;
+                weight: $font-regular;
+              }
+              padding: 8px;
+              text-align: center;
+              border-bottom: 1px solid #ddd;
+
+              @media (max-width: $breakpoint-mobile) {
+                font: {
+                  size: 12px;
+                  weight: $font-regular;
+                }
+                padding: 5px;
+              }
+
+              .btn {
+                @media (max-width: $breakpoint-mobile) {
+                  font: {
+                    size: 12px;
+                    weight: $font-regular;
+                  }
+                  padding-left: 8px;
+                  padding-right: 8px;
+                }
+              }
+            }
+
+            &:nth-child(odd) {
+              td {
+                background-color: #f9f9f9;
+              }
+            }
+          }
+        }
+      }
+
+      &__action {
+      }
+    }
+
+    &__footer {
+      display: flex;
+      justify-content: center;
+
+      ul {
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        padding: 0;
+        display: flex;
+
+        li {
+          border-right: 1px solid #ccc;
+          min-width: 40px;
+
+          &.active {
+            color: #ffffff;
+            background: #c9302c;
+          }
+          &:last-child {
+            border-right: 0;
+          }
+
+          a {
+            display: flex;
+            padding: 10px;
+            justify-content: center;
+
+            &:hover {
+              color: #ffffff;
+              cursor: pointer;
+              background: #c9302c;
+            }
+          }
+        }
+      }
+    }
+  }
+}

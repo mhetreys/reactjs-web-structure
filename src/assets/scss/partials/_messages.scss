@@ -1,0 +1,41 @@
+@import './variables';
+
+.message {
+  font: {
+    size: 13px;
+    weight: $font-medium;
+  };
+  margin: 0;
+  margin-bottom: 7px;
+
+  &--small {
+    font: {
+      size: 11px;
+      weight: $font-regular;
+    };
+  }
+
+  &--success {
+    color: $text-primary;
+  }
+
+  &--error {
+    color: $text-error;
+  }
+
+  &--empty {
+    color: $text-grey;
+    font: {
+      style: italic;
+      weight: $font-light;
+    };
+  }
+
+  &--emphasis {
+    color: $text-grey;
+    font: {
+      style: italic;
+      weight: $font-medium;
+    };
+  }
+}

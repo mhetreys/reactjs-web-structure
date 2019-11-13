@@ -1,0 +1,28 @@
+@import './variables';
+
+.modal {
+  &__header {
+    margin-bottom: 20px;
+
+    h3 {
+      margin: 0;
+    }
+  }
+
+  &__body {
+    margin-bottom: 20px;
+  }
+
+  &__footer {
+    display: flex;
+    flex-direction: row;
+
+    .btn {
+      margin-right: 10px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}

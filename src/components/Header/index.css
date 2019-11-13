@@ -1,0 +1,26 @@
+.header {
+  background: white;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.13); }
+  .header__fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1030; }
+  .header__content {
+    display: flex;
+    align-items: center;
+    height: 65px; }
+  .header__brand {
+    display: flex;
+    flex: 1; }
+  .header__links ul {
+    margin: 0;
+    padding: 0; }
+    .header__links ul li {
+      cursor: pointer;
+      font-size: 20px; }
+      .header__links ul li i {
+        margin-right: 5px; }
+      .header__links ul li span {
+        color: #8e1921; }

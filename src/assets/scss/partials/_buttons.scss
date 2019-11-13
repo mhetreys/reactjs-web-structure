@@ -1,0 +1,41 @@
+@import 'variables';
+
+.btn {
+  display: inline-block;
+  cursor: pointer;
+  padding: 6px 12px;
+  border-radius: 4px;
+  box-shadow: none;
+  font: {
+    size: 14px;
+    weight: $font-light;
+  };
+  line-height: 1.5;
+  white-space: nowrap;
+  outline: none;
+
+  &--link {
+    color: #a8a8a8;
+    background-color: transparent;
+    border: 1px solid transparent;
+    line-height: 1;
+  }
+
+  &--danger {
+    color: #ffffff;
+    background-color: #d9534f;
+    border: 1px solid #d43f3a;
+
+    &:hover {
+      background-color: #c9302c;
+      border-color: #ac2925;
+    }
+
+    &:disabled {
+      background-color: #c9302c;
+      border-color: #ac2925;
+      cursor: $button-disabled-cursor;
+      opacity: 0.65;
+    }
+  }
+}

@@ -1,0 +1,13 @@
+@import './variables';
+
+.hidden-xs {
+  @media (max-width: $breakpoint-mobile) {
+    display: none;
+  }
+}
+
+.visible-xs {
+  @media (min-width: $breakpoint-mobile) {
+    display: none;
+  }
+}

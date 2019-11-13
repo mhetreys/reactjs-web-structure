@@ -1,0 +1,47 @@
+@import './../../assets/scss/partials/variables';
+
+.header {
+  background: white;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.13);
+
+  &__fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1030;
+  }
+
+  &__content {
+    display: flex;
+    align-items: center;
+    height: $header-height;
+  }
+
+  &__brand {
+    display: flex;
+    flex: 1;
+  }
+
+  &__links {
+    ul {
+      margin: 0;
+      padding: 0;
+
+      li {
+        cursor: pointer;
+        font: {
+          size: 20px;
+        };
+
+        i {
+          margin-right: 5px;
+        }
+
+        span {
+          color: #8e1921;
+        }
+      }
+    }
+  }
+}
